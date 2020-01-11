@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import AirQuality from './Components/AirQuality'
+import AirQuality from "./Components/AirQuality";
 
 function App() {
   return (
