@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { ListGroup } from "react-bootstrap";
+import { ListGroup, Container, Col, Row } from "react-bootstrap";
 
 import './AirQuality.css'
 
@@ -31,6 +31,9 @@ const AirQuality = props => {
   return (
     <div className="air-quality-component">
       <h1>EPA - Air Quality</h1>
+      <Container>
+          <Row>
+              <Col>
       <ListGroup>
         {sites.map(site => {
             const style = {
@@ -43,6 +46,9 @@ const AirQuality = props => {
           );
         })}
       </ListGroup>
+      </Col>
+      </Row>
+    </Container>
     </div>
   );
 };
